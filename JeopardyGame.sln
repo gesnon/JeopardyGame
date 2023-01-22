@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeopardyGame", "JeopardyGame\JeopardyGame.csproj", "{FDE33974-AB13-495E-BE30-87A2A2A60114}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JeopardyGame", "JeopardyGame\JeopardyGame.csproj", "{FDE33974-AB13-495E-BE30-87A2A2A60114}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeopardyGame.Domain", "JeopardyGame.Domain\JeopardyGame.Domain.csproj", "{E27E8844-BBF8-409B-A35E-45B8821F4351}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JeopardyGame.Domain", "JeopardyGame.Domain\JeopardyGame.Domain.csproj", "{E27E8844-BBF8-409B-A35E-45B8821F4351}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeopardyGame.Core", "JeopardyGame.Core\JeopardyGame.Core.csproj", "{0FEEAC34-AA15-4B19-B6F4-4D52779FA86E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JeopardyGame.Core", "JeopardyGame.Core\JeopardyGame.Core.csproj", "{0FEEAC34-AA15-4B19-B6F4-4D52779FA86E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeopardyGame.Persistance", "JeopardyGame.Persistance\JeopardyGame.Persistance.csproj", "{1D7B1433-F915-4406-8CE7-F20504F56220}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{0FEEAC34-AA15-4B19-B6F4-4D52779FA86E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FEEAC34-AA15-4B19-B6F4-4D52779FA86E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FEEAC34-AA15-4B19-B6F4-4D52779FA86E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D7B1433-F915-4406-8CE7-F20504F56220}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D7B1433-F915-4406-8CE7-F20504F56220}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D7B1433-F915-4406-8CE7-F20504F56220}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D7B1433-F915-4406-8CE7-F20504F56220}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
