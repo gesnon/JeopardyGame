@@ -4,7 +4,7 @@ namespace JeopardyGame.Core.Services.RoundServise
 {
     public interface IRoundService
     {
-        Task Create(RoundDto round);
+        Task<int> Create(RoundDto round);
 
         Task Update(RoundDto round);
 

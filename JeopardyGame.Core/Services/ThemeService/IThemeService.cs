@@ -4,7 +4,7 @@ namespace JeopardyGame.Core.Services.ThemeService
 {
     public interface IThemeService
     {
-        Task Create(ThemeDto theme);
+        Task<int> Create(ThemeDto theme);
 
         Task Update(ThemeDto theme);
 
