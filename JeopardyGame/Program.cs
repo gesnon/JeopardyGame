@@ -1,5 +1,6 @@
 using AutoMapper;
 using JeopardyGame.Core.Hubs;
+using JeopardyGame.CustomExceptionMiddleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +12,8 @@ builder.Services.AddAutoMapper(typeof(MapperConfiguration).Assembly);
 var app = builder.Build();
 
 //app.UseHttpsRedirection();
+
+app.UseMiddleware<ExceptionMiddleware>();
 
 app.UseCors(builder => builder
   .WithOrigins("null")
