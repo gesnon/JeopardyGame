@@ -1,9 +1,10 @@
-﻿using JeopardyGame.Domain.Entities;
+﻿using JeopardyGame.Core.Common.Interfaces;
+using JeopardyGame.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace JeopardyGame.Infrastructure.Persistance
 {
-    public class ContextDB : DbContext
+    public class ContextDB : DbContext, IAppDbContext
     {
         public DbSet<Pack> Packs { get; set; }
 
