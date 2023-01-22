@@ -1,17 +1,15 @@
-﻿using JeopardyGame.Domain.DTO;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using JeopardyGame.Core.Models;
 
 namespace JeopardyGame.Core.Services.RoundServise
 {
     public interface IRoundService
     {
-        Task Create(RoundDTO round);
-        Task Update(RoundDTO round);
+        Task Create(RoundDto round);
+
+        Task Update(RoundDto round);
+
         Task Remove(int id);
-        Task<RoundDTO> Get(int id);
+
+        Task<RoundDto> Get(int id);
     }
 }

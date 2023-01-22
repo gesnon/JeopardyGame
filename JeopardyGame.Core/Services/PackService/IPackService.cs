@@ -1,18 +1,17 @@
-﻿using JeopardyGame.Domain.DTO;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using JeopardyGame.Core.Models;
 
 namespace JeopardyGame.Core.Services.PackService
 {
     public interface IPackService
     {
-        Task CreateAsync(PackDTO pack);
-        Task UpdateAsync(PackDTO pack);
+        Task CreateAsync(PackDto pack);
+
+        Task UpdateAsync(PackDto pack);
+
         Task RemoveAsync(int id);
-        Task<PackDTO> GetAsync(int id);
-        Task<List<PackDTO>> ListAsync();
+
+        Task<PackDto> GetAsync(int id);
+
+        Task<List<PackDto>> ListAsync();
     }
 }

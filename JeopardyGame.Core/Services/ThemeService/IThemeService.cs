@@ -1,17 +1,15 @@
-﻿using JeopardyGame.Domain.DTO;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using JeopardyGame.Core.Models;
 
 namespace JeopardyGame.Core.Services.ThemeService
 {
-    public  interface IThemeService
+    public interface IThemeService
     {
-        Task Create(ThemeDTO theme);
-        Task Update(ThemeDTO theme);
+        Task Create(ThemeDto theme);
+
+        Task Update(ThemeDto theme);
+
         Task Remove(int id);
-        Task<ThemeDTO> Get(int id);
+
+        Task<ThemeDto> Get(int id);
     }
 }

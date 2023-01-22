@@ -1,12 +1,12 @@
-﻿using JeopardyGame.Domain.Entities;
+﻿using JeopardyGame.Core.Models;
 
 namespace JeopardyGame.Core.Services
 {
     public interface IGameService
     {
-        Task<Game> GetByName(string name);
+        Task<GameDto> GetByName(string name);
 
-        Task Create(Game game);
+        Task Create(GameDto game);
 
         Task Remove(string name);
 

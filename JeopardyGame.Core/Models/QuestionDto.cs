@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using JeopardyGame.Domain.Entities;
+﻿using JeopardyGame.Domain.Entities;
 
-namespace JeopardyGame.Domain.DTO
+namespace JeopardyGame.Core.Models
 {
-    public class QuestionDTO
+    public class QuestionDto
     {
         public int Id { get; set; }
+
         public string Text { get; set; }
 
         public string Answer { get; set; }
