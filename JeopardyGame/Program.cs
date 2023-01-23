@@ -1,12 +1,13 @@
-using AutoMapper;
+using JeopardyGame.Core;
 using JeopardyGame.Core.Hubs;
+using JeopardyGame.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllers();
+builder.Services.AddCore();
+builder.Services.AddInfrastructure();
 builder.Services.AddCors();
-builder.Services.AddSignalR();
-builder.Services.AddAutoMapper(typeof(MapperConfiguration).Assembly);
+
 
 var app = builder.Build();
 
