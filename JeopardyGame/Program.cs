@@ -1,6 +1,7 @@
 using JeopardyGame.Core;
 using JeopardyGame.Core.Hubs;
 using JeopardyGame.Infrastructure;
+using JeopardyGame.CustomExceptionMiddleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,8 @@ builder.Services.AddCors();
 var app = builder.Build();
 
 //app.UseHttpsRedirection();
+
+app.UseMiddleware<ExceptionMiddleware>();
 
 app.UseCors(builder => builder
   .WithOrigins("null")

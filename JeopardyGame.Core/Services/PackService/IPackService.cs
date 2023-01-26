@@ -4,7 +4,7 @@ namespace JeopardyGame.Core.Services.PackService
 {
     public interface IPackService
     {
-        Task CreateAsync(PackDto pack);
+        Task<int> CreateAsync(PackDto pack);
 
         Task UpdateAsync(PackDto pack);
 
