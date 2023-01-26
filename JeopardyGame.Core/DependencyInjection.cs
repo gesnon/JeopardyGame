@@ -1,4 +1,4 @@
-﻿using JeopardyGame.Core.Services.Lobby;
+﻿//using JeopardyGame.Core.Services.Lobby;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
@@ -10,8 +10,6 @@ public static class DependencyInjection
         this IServiceCollection services)
     {
         services.AddAutoMapper(Assembly.GetExecutingAssembly());
-
-        services.AddScoped<ILobbyService, LobbyService>();
 
         return services;
     }

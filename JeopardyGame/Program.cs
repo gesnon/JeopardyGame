@@ -5,8 +5,9 @@ using JeopardyGame.CustomExceptionMiddleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddSignalR();
 builder.Services.AddCore();
-builder.Services.AddInfrastructure();
+builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddCors();
 
 
