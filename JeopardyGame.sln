@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JeopardyGame.Domain", "Jeop
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JeopardyGame.Core", "JeopardyGame.Core\JeopardyGame.Core.csproj", "{0FEEAC34-AA15-4B19-B6F4-4D52779FA86E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JeopardyGame.Infrastructure", "JeopardyGame.Persistance\JeopardyGame.Infrastructure.csproj", "{1D7B1433-F915-4406-8CE7-F20504F56220}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JeopardyGame.Infrastructure", "JeopardyGame.Infrastructure\JeopardyGame.Infrastructure.csproj", "{1D7B1433-F915-4406-8CE7-F20504F56220}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
