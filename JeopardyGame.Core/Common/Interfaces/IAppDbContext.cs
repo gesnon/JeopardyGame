@@ -13,5 +13,7 @@ public interface IAppDbContext
 
     public DbSet<Question> Questions { get; set; }
 
+    public DbSet<Player> Players { get; set; }
+
     public Task<int> SaveChangesAsync(CancellationToken cancellationToken);
 }

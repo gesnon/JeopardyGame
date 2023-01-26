@@ -1,6 +1,6 @@
 ﻿using JeopardyGame.Core.Models;
 
-namespace JeopardyGame.Core.Services.RoundServise
+namespace JeopardyGame.Core.Services.RoundService
 {
     public interface IRoundService
     {
