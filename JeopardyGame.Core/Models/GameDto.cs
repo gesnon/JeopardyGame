@@ -10,7 +10,7 @@
 
         public int MaxPlayers { get; set; }
 
-        public List<UserDto> Players { get; set; }
+        public List<UserDto> Players { get; set; } = new List<UserDto>();
 
         public PackDto Pack { get; set; }
     }

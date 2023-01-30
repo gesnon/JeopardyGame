@@ -18,11 +18,11 @@ var app = builder.Build();
 app.UseMiddleware<ExceptionMiddleware>();
 
 app.UseCors(builder => builder
-  .WithOrigins("null")
+  .WithOrigins("null", "http://127.0.0.1:5173")
   .AllowAnyHeader()
   .AllowAnyMethod()
   .AllowCredentials());
 
-app.MapHub<JeopardyHub>("/jeopardyHub");
+app.MapHub<LobbyHub>("/lobby");
 
 app.Run();
