@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JeopardyGame.Core.Services.RoundServise
+namespace JeopardyGame.Core.Services.RoundService
 {
     public class RoundService: IRoundService
     {
